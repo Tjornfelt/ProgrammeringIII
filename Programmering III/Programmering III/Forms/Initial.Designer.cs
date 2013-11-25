@@ -31,6 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_openAssigment4 = new System.Windows.Forms.Button();
             this.btn_isolatedUnit = new System.Windows.Forms.Button();
+            this.btn_resetUserConfig = new System.Windows.Forms.Button();
+            this.btn_restart = new System.Windows.Forms.Button();
+            this.btn_showStats = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,11 +67,44 @@
             this.btn_isolatedUnit.UseVisualStyleBackColor = true;
             this.btn_isolatedUnit.Click += new System.EventHandler(this.btn_isolatedUnit_Click);
             // 
+            // btn_resetUserConfig
+            // 
+            this.btn_resetUserConfig.Location = new System.Drawing.Point(365, 226);
+            this.btn_resetUserConfig.Name = "btn_resetUserConfig";
+            this.btn_resetUserConfig.Size = new System.Drawing.Size(96, 23);
+            this.btn_resetUserConfig.TabIndex = 3;
+            this.btn_resetUserConfig.Text = "Reset Config";
+            this.btn_resetUserConfig.UseVisualStyleBackColor = true;
+            this.btn_resetUserConfig.Click += new System.EventHandler(this.btn_resetUserConfig_Click);
+            // 
+            // btn_restart
+            // 
+            this.btn_restart.Location = new System.Drawing.Point(249, 226);
+            this.btn_restart.Name = "btn_restart";
+            this.btn_restart.Size = new System.Drawing.Size(110, 23);
+            this.btn_restart.TabIndex = 4;
+            this.btn_restart.Text = "Restart application";
+            this.btn_restart.UseVisualStyleBackColor = true;
+            this.btn_restart.Click += new System.EventHandler(this.btn_restart_Click);
+            // 
+            // btn_showStats
+            // 
+            this.btn_showStats.Location = new System.Drawing.Point(106, 226);
+            this.btn_showStats.Name = "btn_showStats";
+            this.btn_showStats.Size = new System.Drawing.Size(137, 23);
+            this.btn_showStats.TabIndex = 5;
+            this.btn_showStats.Text = "Show Stats";
+            this.btn_showStats.UseVisualStyleBackColor = true;
+            this.btn_showStats.Click += new System.EventHandler(this.btn_showStats_Click);
+            // 
             // Initial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 261);
+            this.ClientSize = new System.Drawing.Size(473, 261);
+            this.Controls.Add(this.btn_showStats);
+            this.Controls.Add(this.btn_restart);
+            this.Controls.Add(this.btn_resetUserConfig);
             this.Controls.Add(this.btn_isolatedUnit);
             this.Controls.Add(this.btn_openAssigment4);
             this.Controls.Add(this.label1);
@@ -85,5 +121,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_openAssigment4;
         private System.Windows.Forms.Button btn_isolatedUnit;
+        private System.Windows.Forms.Button btn_resetUserConfig;
+        private System.Windows.Forms.Button btn_restart;
+        private System.Windows.Forms.Button btn_showStats;
     }
 }
