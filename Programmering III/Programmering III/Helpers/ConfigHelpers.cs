@@ -18,7 +18,6 @@ namespace Programmering_III.Helpers
         {
             var configFile = ConfigurationManager.OpenExeConfiguration(fileName);
             configFile.AppSettings.Settings[key].Value = value;
-
             configFile.Save();
         }
 

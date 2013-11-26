@@ -75,5 +75,19 @@ namespace Programmering_III.Forms
         {
             MessageBox.Show("Number of restarts: " + ConfigHelpers.ReadConfig("NumberOfRestarts", ConfigHelpers.GetConfigFile()));
         }
+
+        private void btn_debug_Click(object sender, EventArgs e)
+        {
+            DebuggingAndTracing dat = new DebuggingAndTracing();
+
+            dat.ShowDialog();
+        }
+
+        private void btn_sendMail_Click(object sender, EventArgs e)
+        {
+            SendEmail se = new SendEmail();
+
+            se.ShowDialog();
+        }
     }
 }
