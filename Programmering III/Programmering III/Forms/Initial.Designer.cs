@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_debug = new System.Windows.Forms.Button();
             this.btn_sendMail = new System.Windows.Forms.Button();
+            this.btn_xmlSerialize = new System.Windows.Forms.Button();
+            this.btn_encryption = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,7 +136,7 @@
             // 
             // btn_sendMail
             // 
-            this.btn_sendMail.Location = new System.Drawing.Point(16, 120);
+            this.btn_sendMail.Location = new System.Drawing.Point(16, 178);
             this.btn_sendMail.Name = "btn_sendMail";
             this.btn_sendMail.Size = new System.Drawing.Size(138, 23);
             this.btn_sendMail.TabIndex = 9;
@@ -143,11 +145,35 @@
             this.btn_sendMail.UseVisualStyleBackColor = true;
             this.btn_sendMail.Click += new System.EventHandler(this.btn_sendMail_Click);
             // 
+            // btn_xmlSerialize
+            // 
+            this.btn_xmlSerialize.Location = new System.Drawing.Point(16, 119);
+            this.btn_xmlSerialize.Name = "btn_xmlSerialize";
+            this.btn_xmlSerialize.Size = new System.Drawing.Size(138, 23);
+            this.btn_xmlSerialize.TabIndex = 10;
+            this.btn_xmlSerialize.Text = "11) XML serialization";
+            this.btn_xmlSerialize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_xmlSerialize.UseVisualStyleBackColor = true;
+            this.btn_xmlSerialize.Click += new System.EventHandler(this.btn_xmlSerialize_Click);
+            // 
+            // btn_encryption
+            // 
+            this.btn_encryption.Location = new System.Drawing.Point(16, 149);
+            this.btn_encryption.Name = "btn_encryption";
+            this.btn_encryption.Size = new System.Drawing.Size(138, 23);
+            this.btn_encryption.TabIndex = 11;
+            this.btn_encryption.Text = "14) Encryption";
+            this.btn_encryption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_encryption.UseVisualStyleBackColor = true;
+            this.btn_encryption.Click += new System.EventHandler(this.btn_encryption_Click);
+            // 
             // Initial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 261);
+            this.Controls.Add(this.btn_encryption);
+            this.Controls.Add(this.btn_xmlSerialize);
             this.Controls.Add(this.btn_sendMail);
             this.Controls.Add(this.btn_debug);
             this.Controls.Add(this.label2);
@@ -176,5 +202,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_debug;
         private System.Windows.Forms.Button btn_sendMail;
+        private System.Windows.Forms.Button btn_xmlSerialize;
+        private System.Windows.Forms.Button btn_encryption;
     }
 }

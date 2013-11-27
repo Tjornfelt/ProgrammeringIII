@@ -89,5 +89,18 @@ namespace Programmering_III.Forms
 
             se.ShowDialog();
         }
+
+        private void btn_xmlSerialize_Click(object sender, EventArgs e)
+        {
+            XMLSerialization xmls = new XMLSerialization();
+
+            xmls.ShowDialog();
+        }
+
+        private void btn_encryption_Click(object sender, EventArgs e)
+        {
+            Encryption enc = new Encryption();
+            enc.ShowDialog();
+        }
     }
 }
