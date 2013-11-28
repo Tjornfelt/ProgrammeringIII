@@ -102,5 +102,12 @@ namespace Programmering_III.Forms
             Encryption enc = new Encryption();
             enc.ShowDialog();
         }
+
+        private void btn_cas_Click(object sender, EventArgs e)
+        {
+            CodeAccessSecurity cas = new CodeAccessSecurity();
+
+            cas.ShowDialog();
+        }
     }
 }

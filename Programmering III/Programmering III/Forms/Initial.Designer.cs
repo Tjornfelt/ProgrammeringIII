@@ -40,6 +40,7 @@
             this.btn_sendMail = new System.Windows.Forms.Button();
             this.btn_xmlSerialize = new System.Windows.Forms.Button();
             this.btn_encryption = new System.Windows.Forms.Button();
+            this.btn_cas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -136,7 +137,7 @@
             // 
             // btn_sendMail
             // 
-            this.btn_sendMail.Location = new System.Drawing.Point(16, 178);
+            this.btn_sendMail.Location = new System.Drawing.Point(16, 223);
             this.btn_sendMail.Name = "btn_sendMail";
             this.btn_sendMail.Size = new System.Drawing.Size(138, 23);
             this.btn_sendMail.TabIndex = 9;
@@ -158,7 +159,7 @@
             // 
             // btn_encryption
             // 
-            this.btn_encryption.Location = new System.Drawing.Point(16, 149);
+            this.btn_encryption.Location = new System.Drawing.Point(16, 194);
             this.btn_encryption.Name = "btn_encryption";
             this.btn_encryption.Size = new System.Drawing.Size(138, 23);
             this.btn_encryption.TabIndex = 11;
@@ -167,11 +168,22 @@
             this.btn_encryption.UseVisualStyleBackColor = true;
             this.btn_encryption.Click += new System.EventHandler(this.btn_encryption_Click);
             // 
+            // btn_cas
+            // 
+            this.btn_cas.Location = new System.Drawing.Point(16, 149);
+            this.btn_cas.Name = "btn_cas";
+            this.btn_cas.Size = new System.Drawing.Size(138, 23);
+            this.btn_cas.TabIndex = 12;
+            this.btn_cas.Text = "13) Code Access Security";
+            this.btn_cas.UseVisualStyleBackColor = true;
+            this.btn_cas.Click += new System.EventHandler(this.btn_cas_Click);
+            // 
             // Initial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 261);
+            this.Controls.Add(this.btn_cas);
             this.Controls.Add(this.btn_encryption);
             this.Controls.Add(this.btn_xmlSerialize);
             this.Controls.Add(this.btn_sendMail);
@@ -204,5 +216,6 @@
         private System.Windows.Forms.Button btn_sendMail;
         private System.Windows.Forms.Button btn_xmlSerialize;
         private System.Windows.Forms.Button btn_encryption;
+        private System.Windows.Forms.Button btn_cas;
     }
 }
