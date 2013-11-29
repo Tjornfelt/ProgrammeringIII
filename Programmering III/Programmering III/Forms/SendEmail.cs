@@ -56,7 +56,7 @@ namespace Programmering_III.Forms
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 587;
 
-            smtp.Credentials = new NetworkCredential("madstjornfelt@gmail.com", "4Tf3Owx9HRtB");
+            smtp.Credentials = new NetworkCredential("madstjornfelt@gmail.com", "");
             smtp.EnableSsl = true;
 
             //Send the mail
