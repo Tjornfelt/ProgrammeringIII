@@ -23,7 +23,7 @@ namespace Programmering_III.Forms
         {
             if (!workerProcess1.IsBusy)
             {
-                rt_workerProcess1.Text = "Counting to a million...";
+                rt_workerProcess1.Text = "Counting to 10.000...";
                 workerProcess1.RunWorkerAsync();
             }
             else
@@ -58,7 +58,7 @@ namespace Programmering_III.Forms
         {
             if (!workerProcess2.IsBusy)
             {
-                rt_workerProcess2.Text = "Counting to a million...";
+                rt_workerProcess2.Text = "Counting to 10.000";
                 workerProcess2.RunWorkerAsync();
             }
             else

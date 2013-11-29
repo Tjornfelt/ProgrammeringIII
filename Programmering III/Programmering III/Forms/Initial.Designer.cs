@@ -41,6 +41,7 @@
             this.btn_xmlSerialize = new System.Windows.Forms.Button();
             this.btn_encryption = new System.Windows.Forms.Button();
             this.btn_cas = new System.Windows.Forms.Button();
+            this.btn_referenceLibrary = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +112,7 @@
             this.panel1.Controls.Add(this.btn_showStats);
             this.panel1.Controls.Add(this.btn_resetUserConfig);
             this.panel1.Controls.Add(this.btn_restart);
-            this.panel1.Location = new System.Drawing.Point(316, 162);
+            this.panel1.Location = new System.Drawing.Point(317, 169);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(143, 87);
             this.panel1.TabIndex = 6;
@@ -119,7 +120,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(338, 141);
+            this.label2.Location = new System.Drawing.Point(339, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 13);
             this.label2.TabIndex = 7;
@@ -137,7 +138,7 @@
             // 
             // btn_sendMail
             // 
-            this.btn_sendMail.Location = new System.Drawing.Point(16, 223);
+            this.btn_sendMail.Location = new System.Drawing.Point(16, 234);
             this.btn_sendMail.Name = "btn_sendMail";
             this.btn_sendMail.Size = new System.Drawing.Size(138, 23);
             this.btn_sendMail.TabIndex = 9;
@@ -159,7 +160,7 @@
             // 
             // btn_encryption
             // 
-            this.btn_encryption.Location = new System.Drawing.Point(16, 194);
+            this.btn_encryption.Location = new System.Drawing.Point(16, 176);
             this.btn_encryption.Name = "btn_encryption";
             this.btn_encryption.Size = new System.Drawing.Size(138, 23);
             this.btn_encryption.TabIndex = 11;
@@ -170,7 +171,7 @@
             // 
             // btn_cas
             // 
-            this.btn_cas.Location = new System.Drawing.Point(16, 149);
+            this.btn_cas.Location = new System.Drawing.Point(16, 148);
             this.btn_cas.Name = "btn_cas";
             this.btn_cas.Size = new System.Drawing.Size(138, 23);
             this.btn_cas.TabIndex = 12;
@@ -178,11 +179,23 @@
             this.btn_cas.UseVisualStyleBackColor = true;
             this.btn_cas.Click += new System.EventHandler(this.btn_cas_Click);
             // 
+            // btn_referenceLibrary
+            // 
+            this.btn_referenceLibrary.Location = new System.Drawing.Point(16, 205);
+            this.btn_referenceLibrary.Name = "btn_referenceLibrary";
+            this.btn_referenceLibrary.Size = new System.Drawing.Size(138, 23);
+            this.btn_referenceLibrary.TabIndex = 13;
+            this.btn_referenceLibrary.Text = "15) Reference Library";
+            this.btn_referenceLibrary.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_referenceLibrary.UseVisualStyleBackColor = true;
+            this.btn_referenceLibrary.Click += new System.EventHandler(this.btn_referenceLibrary_Click);
+            // 
             // Initial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 261);
+            this.ClientSize = new System.Drawing.Size(471, 269);
+            this.Controls.Add(this.btn_referenceLibrary);
             this.Controls.Add(this.btn_cas);
             this.Controls.Add(this.btn_encryption);
             this.Controls.Add(this.btn_xmlSerialize);
@@ -217,5 +230,6 @@
         private System.Windows.Forms.Button btn_xmlSerialize;
         private System.Windows.Forms.Button btn_encryption;
         private System.Windows.Forms.Button btn_cas;
+        private System.Windows.Forms.Button btn_referenceLibrary;
     }
 }

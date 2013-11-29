@@ -117,6 +117,12 @@
     <Compile Include="Forms\Multithreading.Designer.cs">
       <DependentUpon>Multithreading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ReferenceLibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ReferenceLibrary.Designer.cs">
+      <DependentUpon>ReferenceLibrary.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SendEmail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Multithreading.resx">
       <DependentUpon>Multithreading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ReferenceLibrary.resx">
+      <DependentUpon>ReferenceLibrary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SendEmail.resx">
       <DependentUpon>SendEmail.cs</DependentUpon>
@@ -207,6 +216,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{34f22d74-04c3-46db-8a60-4ad97099782c}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

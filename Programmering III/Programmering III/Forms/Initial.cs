@@ -62,6 +62,7 @@ namespace Programmering_III.Forms
         private void btn_resetUserConfig_Click(object sender, EventArgs e)
         {
             ConfigHelpers.UpdateConfig("FirstTimeSetup", "0", ConfigHelpers.GetConfigFile());
+            ConfigHelpers.UpdateConfig("NumberOfRestarts", "0", ConfigHelpers.GetConfigFile());
         }
 
         private void btn_restart_Click(object sender, EventArgs e)
@@ -108,6 +109,13 @@ namespace Programmering_III.Forms
             CodeAccessSecurity cas = new CodeAccessSecurity();
 
             cas.ShowDialog();
+        }
+
+        private void btn_referenceLibrary_Click(object sender, EventArgs e)
+        {
+            ReferenceLibrary refl = new ReferenceLibrary();
+
+            refl.ShowDialog();
         }
     }
 }
